@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: white;
+    transition: 0.15s;
+}
+body::-webkit-scrollbar{
+   width: 0.4rem;
+   background-color: rgb(51, 39, 69);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(129, 85, 129);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgb(86, 76, 95);
+    justify-content: space-between;
+
+}
+
+.list {
+    list-style: none;
+    padding: 0.7rem ;
+    cursor: pointer;
+}
+.list:hover{
+    background-color: rgb(55, 55, 82);
+    border-radius: 0.4rem;
+}
+.list:active{
+    background-color: rgb(71, 48, 91);
+}
+
+
+#menuIcon {
+    padding: 1rem !important;
+    
+}
+ 
+
+.material-symbols-outlined {
+    visibility: visible;
+    vertical-align: middle;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 30px !important;
+    padding: 0 !important;
+}
+
+.rupeesIcon {
+    color: rgb(212, 26, 166);
+}
+
+.price {
+    color: rgb(22, 25, 208);
+}
+
+.cartIcon {
+    float: right;
+    color: rgb(19, 18, 18);
+    background-color: black;
+    padding: 0.2rem 1.5rem;
+    border-radius: 4px;
+   
+}
+
+.cartIcon:hover {
+    background-color: rgb(50, 48, 51);
+}
+.cartIcon:active{
+    background-color: rgb(79, 63, 95);
+}
+
+.navBar {
+    display: inline-flex;
+    vertical-align: middle;
+    padding: 1rem;
+
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    background-color: rgb(56, 54, 54);
+    height: 100vh;
+    width: max-content;
+    /* padding: 1.5rem; */
+    padding-top: .5rem;
+    transform: scaleX(1);
+    transition: 0.9s;
+    left: 0;
+    /* margin-top: 5rem; */
+
+}
+
+.sideBar_ul {
+    flex-direction: column;
+    /* margin-top: 2rem; */
+    .list {
+        padding: 1rem 3rem;
+        /* padding: 2px 2px 2px 2px; t r b l */
+    }
+}
+.sideBar_ul:first-child{
+    margin-top: 2rem;
+}
+
+.remove-sidebar {
+    margin-bottom: 2rem;
+}
+
+.remove-sidebar span {
+    float: right;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.removeSidebar {
+    transform: scaleX(-0.01);
+    transition: 0.9s;
+    visibility: hidden;
+    left: -90px;
+}
+
+#boxContainer {
+    transition: 2s;
+}
+img{
+    mix-blend-mode: multiply;
+
+}
+.boxs {
+    margin-top: 6rem;
+    display: inline-flex;
+    /* margin-left: 100px; */
+    transition: 4s;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    border-radius: 4px;
+    background-color: rgb(201, 193, 209);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+}
+
+.image-box {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 1rem;
+
+}
+
+
+@media (max-width: 500px) {
+    * {
+        font-size: 13px;
+
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prajwal's App</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="main-div">
+  <header>
+    <span class="material-symbols-outlined" id="menuIcon" onclick="removeSideBar()">
+      menu
+    </span>
+    <ul class="navBar">
+      <li class="list"><a href="#home">HOME</a></li>
+      <li class="list"><a href="#about">ABOUT</a></li>
+      <li class="list"><a href="#myCart">My CART</a></li>
+    </ul>
+  </header>
+  <aside class="sideBar">
+    <div class="remove-sidebar">
+      <span class="material-symbols-outlined" id="cancel" onclick="removeSideBar()">
+        cancel
+      </span>
+    </div>
+    <ul class="sideBar_ul">
+      <li class="list">HELLO</li>
+      <li class="list">HAI</li>
+      <li class="list">SEE YOU</li>
+      <li class="list">BYE</li>
+    </ul>
+  </aside>
+  <div id="boxContainer">
+    <!-- Content Dynamically Adding  -->
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
